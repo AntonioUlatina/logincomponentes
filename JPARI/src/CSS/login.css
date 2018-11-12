@@ -1,0 +1,47 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  .wrapper {
+      display: grid;
+      grid-template-columns: 5vw 90vw 5vw;
+      grid-template-rows: 3vh 94vh 3vh;
+      grid-template-areas:
+          "ads1 nav ads2"
+          "ads1 cnt ads2"
+          "ads1 ftr ads2"
+  }
+
+  nav,
+  footer {
+      background: lightgray;
+  }
+
+  nav {
+      grid-area: nav;
+  }
+
+  footer {
+      grid-area: ftr;
+  }
+
+
+  .content {
+      grid-area: cnt;
+      background: lightblue;
+  }
+
+  .ads1 {
+      grid-area: ads1;
+  }
+
+  .ads2 {
+      grid-area: ads2;
+  }
+
+  .ads1,
+  .ads2 {
+      width: 5vw;
+
+  }
